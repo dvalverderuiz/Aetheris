@@ -1,10 +1,21 @@
 services:
   nginx:
-    image: nginx:stable
-    container_name: nginx-Aetheris
-    restart: unless-stopped
+    image: nginx:latest
+    container_name: aetheris-nginx
     ports:
-      - "8080:80"
+      - "80:80"
     volumes:
-      - ./apps/landing:/usr/share/nginx/html:ro
-      - ./conf/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./conf/nginx.conf:/etc/nginx/conf.d/default.conf
+      - ./apps:/usr/share/nginx/html/apps
+      - ./apps/landing:/usr/share/nginx/html
+    restart: unless-stopped
+
+
+
+
+
+
+
+
+
+
