@@ -1,3 +1,3 @@
 # Aetheris
 
-Proyecto personal Albert Valles Y David Valverde.
+Proyecto personal Albert Valles, David Valverde Y b4d1t.
